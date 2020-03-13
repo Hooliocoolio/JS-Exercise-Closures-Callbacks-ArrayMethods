@@ -17,6 +17,8 @@
 function processFirstItem(stringList, callback) {
      return callback(stringList[0]);
 }
+
+
 // ⭐️ Example Challenge END ⭐️
 
 
@@ -47,8 +49,9 @@ function processFirstItem(stringList, callback) {
  * [2] Invoking `processLength` passing `[]` and `(num) => "There are " + num`,
  * should return "There are 0".
 */
-function processLength(/* CODE HERE */) {
-  /* CODE HERE */
+
+function processLength(list, callback) {
+ return (callback(list.length));
 }
 
 /**
@@ -65,8 +68,10 @@ function processLength(/* CODE HERE */) {
  * Invoking `processLastItem` passing `['foo', 'bar']` and `(str) => str + str`,
  * should return 'barbar'.
 */
-function processLastItem(/* CODE HERE */) {
-  /* CODE HERE */
+
+// returned the callback function the length of the stringLIst by using pop method
+function processLastItem(stringList, cb) {
+  return (cb(stringList.pop()));
 }
 
 /**
